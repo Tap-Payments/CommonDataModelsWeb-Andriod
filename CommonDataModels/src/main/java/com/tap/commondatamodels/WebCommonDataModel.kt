@@ -58,3 +58,7 @@ enum class DIRECTIONS {
     RTL, LTR
 }
 
+enum class CardType {
+    CREDIT, DEBIT, ALL
+}
+
