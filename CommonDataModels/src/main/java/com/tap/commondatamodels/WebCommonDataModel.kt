@@ -1,18 +1,19 @@
 import com.tap.commondatamodels.cardBrands.CardBrand
+import com.tap.commondatamodels.currencies.GlobalCurrency
 
 data class WebCommonDataModel(
-    var publicKey: String,
-    var merchant: Merchant,
-    var transaction: Transaction,
-    var customer: Customer,
-    var fields: FieldsWeb,
-    var acceptance: AcceptanceWeb,
-    var addons: addonsWeb,
-    var interfaceWeb: interfaceWeb
+    var publicKey: String?,
+    var merchant: Merchant?,
+    var transaction: Transaction?,
+    var customer: Customer?,
+    var fields: FieldsWeb?,
+    var acceptance: AcceptanceWeb?,
+    var addons: addonsWeb?,
+    var interfaceWeb: interfaceWeb?
 )
 
 data class Merchant(var id: String)
-data class Transaction(var amount: String, var currency: CURRENCY = CURRENCY.SAR)
+data class Transaction(var amount: String, var currency: GlobalCurrency = GlobalCurrency.SAR)
 
 data class Customer(
     var id: String,
@@ -40,10 +41,6 @@ data class Contact(var email: String, var phone: Phone)
 data class Phone(var countryCode: String, var number: String)
 data class Name(var lang: LOCAL, var first: String, var last: String, var middle: String)
 
-
-enum class CURRENCY {
-    SAR, KWD
-}
 
 enum class LOCAL {
     EN, AR
