@@ -1,5 +1,6 @@
 package company.tap.tapcardformkit.open.models
 
+
 data class WebModel(
     var publicKey: String,
     var merchant: Merchant,
@@ -14,7 +15,14 @@ data class WebModel(
 data class Merchant(var id: String)
 data class Transaction(var amount: String, var currency: CURRENCY = CURRENCY.SAR)
 
-data class Customer(var id: String, var nameOnCard: String, var editable: Boolean)
+data class Customer(
+    var id: String,
+    var nameOnCard: String,
+    var editable: Boolean,
+    var contact: Contact,
+    var name: Name
+)
+
 data class AcceptanceWeb(
     var supportedBrands: MutableList<String>,
     var supportedCards: MutableList<String>
@@ -28,6 +36,10 @@ data class interfaceWeb(
     var edges: EDGES = EDGES.CURVED,
     var directions: DIRECTIONS = DIRECTIONS.LTR
 )
+
+data class Contact(var email: String, var phone: Phone)
+data class Phone(var countryCode: String, var number: String)
+data class Name(var lang: LOCAL, var first: String, var last: String, var middle: String)
 
 
 enum class CURRENCY {
