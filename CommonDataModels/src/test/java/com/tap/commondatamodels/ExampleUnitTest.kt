@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.tap.commondatamodels
 
 import org.junit.Test
 
