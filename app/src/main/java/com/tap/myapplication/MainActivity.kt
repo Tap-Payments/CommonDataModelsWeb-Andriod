@@ -1,9 +1,7 @@
 package com.tap.myapplication
 
-import WebCommonDataModel
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tap.commondatamodels.currencies.GlobalCurrency
 
 
 class MainActivity : AppCompatActivity() {
