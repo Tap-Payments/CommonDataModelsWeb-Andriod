@@ -33,10 +33,10 @@ data class acceptance(
 data class fields(var cardHolder: Boolean)
 data class addons(var loader: Boolean, var savedCard: Boolean, var displayPaymentBrands: Boolean)
 data class `interface`(
-    var locale: LOCAL = LOCAL.EN,
-    var theme: THEMEWEB = THEMEWEB.LIGHT,
-    var edges: EDGES = EDGES.CURVED,
-    var directions: DIRECTIONS = DIRECTIONS.LTR
+    var locale: LOCAL = LOCAL.en,
+    var theme: THEMEWEB = THEMEWEB.light,
+    var edges: EDGES = EDGES.curved,
+    var directions: DIRECTIONS = DIRECTIONS.ltr
 )
 
 data class contact(var email: String, var phone: Phone)
@@ -45,19 +45,19 @@ data class name(var lang: LOCAL, var first: String, var last: String, var middle
 
 
 enum class LOCAL {
-    EN, AR
+    en, ar
 }
 
 enum class THEMEWEB {
-    LIGHT, DARK
+    light, dark
 }
 
 enum class EDGES {
-    CURVED, STRAIGHT
+    curved, straight
 }
 
 enum class DIRECTIONS {
-    RTL, LTR
+    rtl, ltr
 }
 
 enum class CardType {
