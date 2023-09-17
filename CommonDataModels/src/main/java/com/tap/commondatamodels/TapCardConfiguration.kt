@@ -9,6 +9,7 @@ import kotlinx.serialization.Serializable
  *   - scanner , nfc
  *   - tapMetaData = "hashmap"
  */
+
 @Serializable
 data class TapCardConfigurations(
     var scope: Scope=Scope.Token,
