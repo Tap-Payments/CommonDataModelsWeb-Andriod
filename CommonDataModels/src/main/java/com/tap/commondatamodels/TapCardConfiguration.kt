@@ -132,7 +132,15 @@ data class Post(var url: String)
 
 
 enum class Scope {
-    Authenticate, Token
+    AuthenticatedToken, Token
+}
+
+enum class PaymentChannels{
+    PAYMENT_TRANSACTION,RECURRING_TRANSACTION,INSTALLMENT_TRANSACTION,ADD_CARD,CARDHOLDER_VERIFICATION,SAVED_CARD
+}
+
+enum class TapCardColorStyle {
+    colored, monochrome
 }
 
 enum class TapLocal {
