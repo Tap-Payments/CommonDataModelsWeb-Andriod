@@ -144,7 +144,7 @@ enum class TapCardColorStyle {
 }
 
 enum class TapLocal {
-    en, ar
+    en, ar ,dynamic
 }
 
 enum class TapTheme {
